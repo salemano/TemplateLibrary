@@ -5,7 +5,6 @@
 function AppViewModel() {
 
     self.items = ko.observableArray();
-
     self.newItemValue=ko.observable("");
 
     self.addItem = function(){
