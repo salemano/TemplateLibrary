@@ -1,1 +1,19 @@
 <%=@Temp %>
+<script type="text/javascript" src="knockout.js"></script>
+<table>
+  <thead><tr>
+    <th>To do list</th>
+  </tr>
+  </thead>
+  <tbody data-bind="foreach: items ">
+  <tr>
+    <td><div contenteditable='true' data-bind="text: name"></div></td>
+    <td><a href="#" data-bind="click: removeItem">remove</a></td>
+  </tr>
+  </tbody>
+</table>
+<p>
+  <input data-bind="value: newItemValue, valueUpdate: newItemValue" placeholder="enter text here" />
+  <button data-bind="click: addItem, enable: items().length<10">Add</button>
+</p>
+<script type="text/javascript" src="views/class_template.js" defer="defer"></script>
