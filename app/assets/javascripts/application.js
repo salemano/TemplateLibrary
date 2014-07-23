@@ -14,4 +14,5 @@
 //= require knockout
 //= require jquery_ujs
 //= require turbolinks
+//= require views/class_template.js
 //= require_tree .
