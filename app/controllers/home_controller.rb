@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def Index
-    @Temp = 'Hello from home Controller!'
+    @Temp = 'This is home page of my page!'
   end
 end
