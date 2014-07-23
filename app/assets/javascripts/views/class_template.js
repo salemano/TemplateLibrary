@@ -21,6 +21,7 @@ function toDoItem(todoText) {
     var self = this;
     self.name = todoText;
 }
+
 $(document).ready(function(){
     ko.applyBindings(new AppViewModel());
 });
