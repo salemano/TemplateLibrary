@@ -54,7 +54,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: TemplateLibrary_production
+  database: TemplateDB
   pool: 5
-  username: TemplateLibrary
+  username: user
   password:
