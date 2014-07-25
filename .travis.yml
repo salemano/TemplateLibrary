@@ -1,3 +1,6 @@
+language: ruby
+env:
+  DB=postgresql
 deploy:
   provider: heroku
   api_key:
@@ -6,3 +9,4 @@ deploy:
   on:
     repo: salemano/TemplateLibrary
     branch: master
+  run: "rake db:migrate"

@@ -46,7 +46,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: TemplateDB
+  database: TestDB
   pool: 5
   username: user
   password:
