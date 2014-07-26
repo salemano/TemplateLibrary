@@ -11,3 +11,104 @@
  *= require_self
  *= require_tree .
  */
+.Page
+{
+    color: white;
+    position: fixed;
+    background: url("light_body.png") repeat;
+    width: 100%;
+    height: 100%;
+}
+.Body
+{
+    position: inherit;
+
+    min-height: 500px;
+    min-width: 500px;
+
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: url("backgroundIMG.png") repeat;
+    width: 80%;
+    height: 100%;
+}
+.PanelTitle
+{
+    font-size: inherit;
+    margin-left: 30px;
+    width: 90%;
+    height: 60px;
+    color: #ffffff;
+}
+.PanelBody
+{
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 60px;
+    width: 100%;
+    margin-left: 30px;
+    color: #ffffff;
+}
+.PanelFooter
+{
+    font-size: inherit;
+    position: absolute;
+
+    width:100%;
+    height:60px;
+    bottom: 0;
+
+    text-align: center;
+}
+.TextField
+{
+    font-family: inherit;
+    font-size: 15px;
+    display: inline-block;
+}
+.RemoveButton
+{
+    display: table-cell;
+    text-align: left;
+    margin-left: 80%;
+}
+/*
+TODO Table element Remove move left
+TODO Add content length limit to main form
+ */
+.Input
+{
+    font-family: inherit;
+    font-size: 13px;
+    position: relative;
+    margin: 0;
+    width: 220px;
+    display: inline-block;
+}
+.SubmitButton
+{
+    font-family: inherit;
+    display: inline-block;
+}
+.Panel
+{
+
+    min-height: 300px;
+    min-width: 400px;
+
+    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    font-size: inherit;
+    background: url("dark.png") repeat;
+    opacity: 0.8;
+    border-radius: 30px;
+    left: 50%;
+    top: 50%;
+    display: block;
+    position: relative;
+    height: 300px;
+    margin-top: -200px;
+
+    width: 400px;
+    margin-left: -200px;
+}

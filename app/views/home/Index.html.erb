@@ -1,17 +1,24 @@
-<%=@Temp %>
-<table>
-  <thead><tr>
-    <th>To do list</th>
-  </tr>
-  </thead>
-  <tbody data-bind="foreach: items ">
-  <tr>
-    <td><div contenteditable='true' data-bind="text: name"></div></td>
-    <td><a href="#" data-bind="click: removeItem">remove</a></td>
-  </tr>
-  </tbody>
-</table>
-<p>
-  <input data-bind="value: newItemValue, valueUpdate: newItemValue" placeholder="enter text here" />
-  <button data-bind="click: addItem, enable: items().length<10">Add</button>
-</p>
+<div class="Page">
+  <div class="Body">
+    <div class="Panel">
+      <div class="PanelTitle"><%=@Header %></div>
+      <div class="PanelBody">
+            <table>
+              <tbody data-bind="foreach: items ">
+              <tr>
+                <td><div class="TextField" contenteditable='true' data-bind="text: name"></div></td>
+                <td><a class="RemoveButton" href="#" data-bind="click: removeItem">remove</a></td>
+              </tr>
+              </tbody>
+            </table>
+            <div>
+              <input class="Input" data-bind="value: newItemValue, valueUpdate: newItemValue" placeholder="<%=@FormText %>" />
+              <button class="SubmitButton" data-bind="click: addItem, enable: items().length<10">Add</button>
+            </div>
+          </div>
+      <div class="PanelFooter">
+        <%=@FooterText %>
+      </div>
+    </div>
+  </div>
+</div>
