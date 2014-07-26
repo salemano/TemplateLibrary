@@ -1,0 +1,14 @@
+language: ruby
+env:
+  DB=postgresql
+deploy:
+  provider: heroku
+  api_key:
+    secure: TEg1ZmAUR2fGCgQFjcnG75FBFN4Dh/B3acsdyndUBDWKE/tQ7vuW0WyHOv3RmgF/aUwp8vI9GKOhYpm1KPPvCHNy8qkvLiIoUqxIfdXpjptJhurvjo+jCOskhZS2P5AbEOySe/LW7HMFoq25NO62P0pVplOLpGIwyifsTjou/7o=
+  app: molchanov
+  on:
+    repo: salemano/TemplateLibrary
+    branch: master
+  run: "rake db:migrate"
+before_script:
+  - psql -c 'create database TestDB;' -U postgres
